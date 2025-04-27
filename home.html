@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Attendance Management System - Home</title>
+  <!-- Sử dụng Google Fonts để có font đẹp -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&display=swap" rel="stylesheet">
+  <style>
+    /* Reset và cài đặt cơ bản */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Roboto', sans-serif;
+      background: linear-gradient(135deg, #74ebd5 0%, #ACB6E5 100%);
+      color: #333;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    /* Header */
+    .header {
+      background: rgba(0, 128, 128, 0.85);
+      padding: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #fff;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    .header h1 {
+      font-size: 28px;
+    }
+    /* Main Content */
+    .main {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 20px;
+    }
+    .main h1 {
+      font-size: 36px;
+      margin-bottom: 10px;
+      color: #fff;
+    }
+    .main h3 {
+      font-size: 20px;
+      margin-bottom: 30px;
+      color: #f0f0f0;
+      font-weight: 300;
+    }
+    .buttons {
+      display: flex;
+      gap: 20px;
+      margin-bottom: 30px;
+    }
+    .buttons button {
+      padding: 12px 24px;
+      border: none;
+      border-radius: 25px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+    .buttons button:first-child {
+      background-color: #FF5733;
+      color: #fff;
+    }
+    .buttons button:first-child:hover {
+      background-color: #E04E2D;
+      transform: scale(1.05);
+    }
+    .buttons .connect-wallet {
+      background-color: #007BFF;
+      color: #fff;
+    }
+    .buttons .connect-wallet:hover {
+      background-color: #0056B3;
+      transform: scale(1.05);
+    }
+    /* Footer */
+    .footer {
+      background: #fff;
+      text-align: center;
+      padding: 15px;
+      box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
+    }
+    .footer h3 {
+      font-size: 16px;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>Attendance Management System</h1>
+  </div>
+  <div class="main">
+    <h1>Welcome to Attendance Management System</h1>
+    <h3>Hệ thống quản lý điểm danh thông minh, minh bạch và an toàn dựa trên công nghệ Blockchain.</h3>
+    <div class="buttons">
+      <button onclick="navigateTo('about.html')">About Us</button>
+      <button class="connect-wallet" onclick="Login()">Login</button>
+    </div>
+  </div>
+  <div class="footer">
+    <h3>Developed by Group 4 - IT Department - VietNam Aviation Academy</h3>
+  </div>
+
+  <script>
+    // Hàm điều hướng đến trang khác
+    function navigateTo(page) {
+      window.location.href = page;
+    }
+    // Hàm chuyển trang khi nhấn Login
+    function Login() {
+      window.location.href = 'index.html';
+    }
+  </script>
+</body>
+</html>
